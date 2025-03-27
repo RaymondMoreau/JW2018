@@ -1,2 +1,1 @@
-# JW2018
-2018 year
+passion project

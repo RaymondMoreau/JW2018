@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice WRLD Leaks 2018</title>
+    <style>
+        body {
+            background-color: #2E2E2E;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .top-bar {
+            background-color: #3A3A3A;
+            padding: 10px;
+        }
+        .top-bar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .month-header {
+            font-size: 1.5em;
+            margin-top: 20px;
+            border-bottom: 1px solid white;
+        }
+        .song {
+            display: flex;
+            align-items: center;
+            background-color: #444;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .song img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .controls {
+            flex-grow: 1;
+        }
+        .controls input {
+            width: 100%;
+        }
+        button {
+            background-color: #666;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="https://raymondmoreau.github.io/JWHome/">Home</a>
+        <a href="https://raymondmoreau.github.io/JW2018/">2018</a>
+        <a href="https://raymondmoreau.github.io/JW2019/">2019</a>
+        <a href="https://raymondmoreau.github.io/JW2020/">2020</a>
+        <a href="https://raymondmoreau.github.io/JW2021/">2021</a>
+        <a href="https://raymondmoreau.github.io/JW2022/">2022</a>
+        <a href="https://raymondmoreau.github.io/JW2023/">2023</a>
+        <a href="https://raymondmoreau.github.io/JW2024/">2024</a>
+    </div>
+    
+    <h1>Juice WRLD 2018 Leaks</h1>
+    <div class="container" id="song-list">
+        <!-- Songs will be loaded dynamically here -->
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const songs = [
+                { month: "January - April", title: "No Leaks"},
+
+                { month: "May", title: "Bottle", file: "May/Bottle.mp3", cover: "May/covers/bottle12.jpg" },
+                { month: "May", title: "Choppa ft. D Savage", file: "May/Choppa.mp3", cover: "May/covers/choppa3.jpg" },
+                { month: "May", title: "Devil Horns", file: "May/Devil Horns.mp3", cover: "May/covers/devilhorns9.png" },
+                { month: "May", title: "Game", file: "May/Game.mp3", cover: "May/covers/game5.png" },
+                { month: "May", title: "I Hate Her Friends", file: "May/I Hate Her Friends.mp3", cover: "May/covers/ihateherfriends2.png" },
+                { month: "May", title: "In This Bitch ft. Lil Bibby", file: "May/In This Bitch.mp3", cover: "May/covers/inthisbitch.jpg" },
+                { month: "May", title: "Percaholic (Life's Not Fair)", file: "May/Percaholic.mp3", cover: "May/covers/percaholic5.jpg" },
+                { month: "May", title: "Persona", file: "May/Persona.mp3", cover: "May/covers/naruto2.png" },
+                { month: "May", title: "Pesos", file: "May/Pesos.mp3", cover: "May/covers/pesos5.png" },
+                { month: "May", title: "Robbery", file: "May/Robbery.mp3", cover: "May/covers/robberyremix2.jpg" },
+                { month: "May", title: "Safe ft. D Savage", file: "May/Safe.mp3", cover: "May/covers/safe.png" },
+                { month: "May", title: "Slasher", file: "May/Slasher.mp3", cover: "May/covers/slasher5.png" },
+                { month: "May", title: "Too Far", file: "May/Too Far.mp3", cover: "May/covers/toofar3.png" },
+                { month: "May", title: "Used To", file: "May/Used To.mp3", cover: "May/covers/usedto2.png" },
+
+                { month: "June", title: "All Talk", file: "Jun/All Talk.mp3", cover: "Jun/covers/alltalk10.png" },
+                { month: "June", title: "All The Same", file: "Jun/All The Same.mp3", cover: "Jun/covers/allthesame5.jpg" },
+                { month: "June", title: "Been Awhile", file: "Jun/Been Awhile.mp3", cover: "Jun/covers/beenawhile3.jpg" },
+                { month: "June", title: "Bonnie And Clyde", file: "Jun/Bonnie and Clyde.mp3", cover: "Jun/covers/bonnieandclyde.jpg" },
+                { month: "June", title: "Bullet For My Valentine", file: "Jun/Bullet For My Valentine.mp3", cover: "Jun/covers/bulletformyvalentine12.jpg" },
+                { month: "June", title: "Flavour", file: "Jun/Flavour.mp3", cover: "Jun/covers/flavor3.png" },
+                { month: "June", title: "Fuck You", file: "Jun/Fuck You.mp3", cover: "Jun/covers/fuckyou2.jpg" },
+                { month: "June", title: "In My Bag", file: "Jun/In My Bag.mp3", cover: "Jun/covers/inmybag4.jpg" },
+                { month: "June", title: "Jeffery", file: "Jun/Jeffery.mp3", cover: "Jun/covers/jeffery3.jpeg" },
+                { month: "June", title: "Juicy", file: "Jun/Juicy.mp3", cover: "Jun/covers/juicy4.jpg" },
+                { month: "June", title: "Kawasaki", file: "Jun/Kawasaki.mp3", cover: "Jun/covers/kawasaki5.jpg" },
+                { month: "June", title: "Kickflip", file: "Jun/Kickflip.mp3", cover: "Jun/covers/kickflip2.png" },
+                { month: "June", title: "Let Go", file: "Jun/Let Go.mp3", cover: "Jun/covers/letgo2.jpg" },
+                { month: "June", title: "Love Ain't Meant For Demons", file: "Jun/Love Aint Meant For Demons.mp3", cover: "Jun/covers/loveaintmeantfordemons2.png" },
+                { month: "June", title: "Love And Leave Them", file: "Jun/Love And Leave Them.mp3", cover: "Jun/covers/lovethemandleavethem.jpg" },
+                { month: "June", title: "Love No Hoe", file: "Jun/Love No Hoe.mp3", cover: "Jun/covers/lovenohoe.png" },
+                { month: "June", title: "Make It Sell", file: "Jun/Make It Sell.mp3", cover: "Jun/covers/makeitsell6.png" },
+                { month: "June", title: "Me", file: "Jun/Me.mp3", cover: "Jun/covers/me.jpg" },
+                { month: "June", title: "Money Hunt", file: "Jun/Money Hunt.mp3", cover: "Jun/covers/moneyhunt3.jpg" },
+                { month: "June", title: "Nascar ft. Calboy", file: "Jun/Nascar.mp3", cover: "Jun/covers/nascar6.png" },
+                { month: "June", title: "Overdose", file: "Jun/Overdose.mp3", cover: "Jun/covers/overdose.jpg" },
+                { month: "June", title: "Porridge", file: "Jun/Porridge.mp3", cover: "Jun/covers/porridge2.jpg" },
+                { month: "June", title: "Rebel Blood", file: "Jun/Rebel Blood.mp3", cover: "Jun/covers/rebelblood4.jpg" },
+                { month: "June", title: "Shoot For You", file: "Jun/Shoot For You.mp3", cover: "Jun/covers/shootforyou3.jpg" },
+                { month: "June", title: "Smoke ft. Valee", file: "Jun/Smoke.mp3", cover: "Jun/covers/smoke6.png" },
+                { month: "June", title: "Stop Talking", file: "Jun/Stop Talking.mp3", cover: "Jun/covers/stoptalking.png" },
+                { month: "June", title: "The Race", file: "Jun/The Race.mp3", cover: "Jun/covers/therace5.png" },
+                { month: "June", title: "Underwrld", file: "Jun/Underwrld.mp3", cover: "Jun/covers/underworld2.jpg" },
+                { month: "June", title: "Watch Me", file: "Jun/Watch Me.mp3", cover: "Jun/covers/watchme.png" },
+
+                { month: "July", title: "Another Way", file: "Jul/Another Way.mp3", cover: "Jul/covers/anotherway8.png" },
+                { month: "July", title: "Antisocial", file: "Jul/Antisocial.mp3", cover: "Jul/covers/inaminute3.png" },
+                { month: "July", title: "Any Other Way", file: "Jul/Any Other Way.mp3", cover: "Jul/covers/anyotherway.png" },
+                { month: "July", title: "Big Swag", file: "Jul/Big Swag.mp3", cover: "Jul/covers/bigswag2.jpg" },
+                { month: "July", title: "Chimp", file: "Jul/Chimp.mp3", cover: "Jul/covers/chimp2.jpg" },
+                { month: "July", title: "Codeine Music", file: "Jul/Codeine Music.mp3", cover: "Jul/covers/codeinemusic5.png" },
+                { month: "July", title: "Dolce", file: "Jul/Dolce.mp3", cover: "Jul/covers/dolce2.jpg" },
+                { month: "July", title: "First Time", file: "Jul/First Time.mp3", cover: "Jul/covers/firsttime2.jpeg" },
+                { month: "July", title: "Flaws", file: "Jul/Flaws.mp3", cover: "Jul/covers/flaws4.png" },
+                { month: "July", title: "From The Start", file: "Jul/From The Start.mp3", cover: "Jul/covers/fromthestart.jpg" },
+                { month: "July", title: "Gave Her All Of Me", file: "Jul/Gave Her All Of Me.mp3", cover: "Jul/covers/gaveherallofme3.jpg" },
+                { month: "July", title: "Good Days", file: "Jul/Good Days.mp3", cover: "Jul/covers/goodday2.png" },
+                { month: "July", title: "Got Nothing On Me", file: "Jul/Got Nothing On Me.mp3", cover: "Jul/covers/gotnothingonme4.png" },
+                { month: "July", title: "Heavy", file: "Jul/Heavy.mp3", cover: "Jul/covers/heavy2.jpg" },
+                { month: "July", title: "I Don't Need It", file: "Jul/I Dont Need It.mp3", cover: "Jul/covers/idontneedit3.jpg" },
+                { month: "July", title: "I Wanna", file: "Jul/I Wanna.mp3", cover: "Jul/covers/iwanna3.png" },
+                { month: "July", title: "In My Head ft. The Chainsmokers", file: "Jul/In My Head.mp3", cover: "Jul/covers/inmyhead3.jpg" },
+                { month: "July", title: "Insecurities", file: "Jul/Insecurities.mp3", cover: "Jul/covers/insecurities2.png" },
+                { month: "July", title: "Jordan", file: "Jul/Jordan.mp3", cover: "Jul/covers/jordan2.jpg" },
+                { month: "July", title: "Larry Bird", file: "Jul/Larry Bird.mp3", cover: "Jul/covers/larrybird3.jpg" },
+                { month: "July", title: "Lavish", file: "Jul/Lavish.mp3", cover: "Jul/covers/lavish4.jpg" },
+                { month: "July", title: "Life Chase", file: "Jul/Life Chase.mp3", cover: "Jul/covers/lifechase4.jpg" },
+                { month: "July", title: "London Tipton ft. DoobieDaLil", file: "Jul/London Tipton.mp3", cover: "Jul/covers/londontipton4.jpg" },
+                { month: "July", title: "Lost Love", file: "Jul/Lost Love.mp3", cover: "Jul/covers/lostlove3.jpg" },
+                { month: "July", title: "Love You Always", file: "Jul/Love You Always.mp3", cover: "Jul/covers/loveyoualways4.jpg" },
+                { month: "July", title: "No More", file: "Jul/No More.mp3", cover: "Jul/covers/nomore.png" },
+                { month: "July", title: "Numb The Pain", file: "Jul/Numb The Pain.mp3", cover: "Jul/covers/numbthepain.png" },
+                { month: "July", title: "Outta Pocket ft. Valee", file: "Jul/Outta Pocket.mp3", cover: "Jul/covers/outtapocket.jpg" },
+                { month: "July", title: "Play Your Role", file: "Jul/Play Your Role.mp3", cover: "Jul/covers/playyourrole.jpg" },
+                { month: "July", title: "Plug", file: "Jul/Plug.mp3", cover: "Jul/covers/plug2.jpeg" },
+                { month: "July", title: "Put Me Down", file: "Jul/Put Me Down.mp3", cover: "Jul/covers/putmedown4.jpg" },
+                { month: "July", title: "Race Beginning", file: "Jul/Race Beginning.mp3", cover: "Jul/covers/racebeginning.png" },
+                { month: "July", title: "Reach Freestyle", file: "Jul/Reach Freestyle.mp3", cover: "Jul/covers/reachfreestyle.png" },
+                { month: "July", title: "Right Now", file: "Jul/Right Now.mp3", cover: "Jul/covers/rightnow3.jpg" },
+                { month: "July", title: "Rockstar Status", file: "Jul/Rockstar Status.mp3", cover: "Jul/covers/rockstarstatus5.jpg" },
+                { month: "July", title: "Run That Shit", file: "Jul/Run That Shit.mp3", cover: "Jul/covers/runthatshit2.jpeg" },
+                { month: "July", title: "Slenderman", file: "Jul/Slenderman.mp3", cover: "Jul/covers/slenderman7.jpg" },
+                { month: "July", title: "Smile", file: "Jul/Smile.mp3", cover: "Jul/covers/smile3.jpg" },
+                { month: "July", title: "So Hard", file: "Jul/So Hard.mp3", cover: "Jul/covers/sohard5.png" },
+                { month: "July", title: "Some More", file: "Jul/Some More.mp3", cover: "Jul/covers/somemore2.jpg" },
+                { month: "July", title: "Task Force", file: "Jul/Task Force.mp3", cover: "Jul/covers/taskforce6.jpg" },
+                { month: "July", title: "Tell Your Friends", file: "Jul/Tell Your Friends.mp3", cover: "Jul/covers/tellyourfriends.png" },
+                { month: "July", title: "Thoughts", file: "Jul/Thoughts.mp3", cover: "Jul/covers/thoughts.jpg" },
+                { month: "July", title: "Tick-Tock", file: "Jul/Tick-Tock.mp3", cover: "Jul/covers/ticktock2.png" },
+                { month: "July", title: "Tonight ft. Valee", file: "Jul/Tonight.mp3", cover: "Jul/covers/tonight4.jpg" },
+                { month: "July", title: "Wavy", file: "Jul/Wavy.mp3", cover: "Jul/covers/wavy3.png" },
+
+                { month: "August", title: "Hell ft. DMG Mthang", file: "Aug/Hell.mp3", cover: "Aug/covers/hell.jpg" },
+                { month: "August", title: "Ok", file: "Aug/Ok.mp3", cover: "Aug/covers/leavemealone4.jpg" },
+
+                { month: "September", title: "Don't Care", file: "Sep/Dont Care.mp3", cover: "Sep/covers/junkie9.jpg" },
+                { month: "September", title: "Rush", file: "Sep/Rush.mp3", cover: "Sep/covers/rush3.jpg" },
+
+                { month: "October", title: "Cigarettes", file: "Oct/Cigarettes.mp3", cover: "Oct/covers/cigarettes7.jpg" },
+                { month: "October", title: "Dumb Slut", file: "Oct/Dumb Slut.mp3", cover: "Oct/covers/dumbslut5.jpg" },
+                { month: "October", title: "Emotional Overdose", file: "Oct/Emotional Overdose.mp3", cover: "Oct/covers/canthelpit5.jpg" },
+                { month: "October", title: "No Hook", file: "Oct/No Hook.mp3", cover: "Oct/covers/nohook.png" },
+
+                { month: "November", title: "5AM Outro", file: "Nov/5AM Outro.mp3", cover: "Nov/covers/5amimcool.jpg" },
+                { month: "November", title: "LET'S GO", file: "Nov/LETS GO.mp3", cover: "Nov/covers/LETSGO4.jpg" },
+                { month: "November", title: "Tweekin' (Lavender Town) ft. Zay Loco", file: "Nov/Tweekin.mp3", cover: "Nov/covers/tweakin.jpg" },
+                { month: "November", title: "We Ain't Goin' ft. MadeInTYO", file: "Nov/We Aint Goin.mp3", cover: "Nov/covers/weaintgoin3.jpg" },
+
+                { month: "December", title: "Trap Phone Bling (Hotline Bling)", file: "Dec/Trap Phone Bling.mp3", cover: "Dec/covers/trapphonebling.png" }
+            ];
+    
+            let container = document.getElementById("song-list");
+            let currentMonth = "";
+            let currentAudio = null; // Track currently playing audio
+            let currentButton = null; // Track currently active button
+    
+            songs.forEach(song => {
+                if (song.month !== currentMonth) {
+                    currentMonth = song.month;
+                    let header = document.createElement("div");
+                    header.className = "month-header";
+                    header.innerText = currentMonth;
+                    container.appendChild(header);
+                }
+    
+                let songDiv = document.createElement("div");
+                songDiv.className = "song";
+                songDiv.innerHTML = `
+                    <img src="${song.cover}" alt="Cover">
+                    <div class="controls">
+                        <div>${song.title}</div>
+                        <input type="range" min="0" max="100" value="0" class="progress-bar">
+                    </div>
+                    <button class="play-btn">Play</button>
+                    <a href="${song.file}" download><button>Download</button></a>
+                `;
+    
+                let playButton = songDiv.querySelector(".play-btn");
+                let progressBar = songDiv.querySelector(".progress-bar");
+                let audio = new Audio(song.file);
+    
+                playButton.addEventListener("click", function () {
+                    // Stop current playing song if another is clicked
+                    if (currentAudio && currentAudio !== audio) {
+                        currentAudio.pause();
+                        currentButton.textContent = "Play";
+                    }
+    
+                    if (audio.paused) {
+                        audio.play();
+                        playButton.textContent = "Pause";
+                        currentAudio = audio;
+                        currentButton = playButton;
+                    } else {
+                        audio.pause();
+                        playButton.textContent = "Play";
+                        currentAudio = null;
+                        currentButton = null;
+                    }
+                });
+    
+                // Update progress bar as the song plays
+                audio.addEventListener("timeupdate", function () {
+                    if (!isNaN(audio.duration)) {
+                        progressBar.value = (audio.currentTime / audio.duration) * 100;
+                    }
+                });
+    
+                // Allow user to seek through the song
+                progressBar.addEventListener("input", function () {
+                    audio.currentTime = (progressBar.value / 100) * audio.duration;
+                });
+    
+                container.appendChild(songDiv);
+            });
+        });
+    </script>
+</body>
+</html>
